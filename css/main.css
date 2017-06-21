@@ -37,8 +37,80 @@ header {
 .fotos{
   height: 400px;
   width: 100%;
+  padding: 5%;
 }
 
 .fot{
   height: 285px;
+}
+
+.fot2{
+  width: 100%;
+}
+
+.fot2A{
+  padding-top: 10%;
+}
+
+.f1{
+  margin-left: -5.5%;
+}
+
+.f2{
+  margin-left: 6%;
+}
+
+.f3{
+  height: 129vh;
+}
+
+/*SEccion Seleccion*/
+.borde{
+  border: 1px solid white;
+  height: 129vh;
+  width: 90%;
+  padding: 0 5% 5% 0;
+  margin: 5%;
+}
+
+/* MAPA */
+#map{
+	width: 70%;
+	height: 100vh;
+	border: 2px solid whitesmoke;
+}
+
+/*Botón*/
+
+button{
+	margin: 15px auto;
+	padding: 10px 15px;
+	color: white;
+	background-color: #EF4A59;
+	border: 0;
+	font-weight: 700;
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	display: block;
+}
+
+button:hover, button:focus{
+	outline: 0;
+  background-color: #D9A0A0;
+  color: #252126;
+}
+
+label{
+  color: purple;
+}
+
+/*FOOTER*/
+.footer{
+  width: 100%;
+}
+
+.nombreFecha{
+  padding-top: 3%;
+  color: purple;
 }

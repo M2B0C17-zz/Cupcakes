@@ -41,7 +41,7 @@
       </div>
     </div>
   </section>
-  <!-- Fotos -->
+  <!-- Fotos 1 -->
   <section id="fotos">
     <div class="container-fluid fotos">
       <div class="row">
@@ -59,8 +59,99 @@
           <img id="foto4" draggable="true" ondragstart="drag(event)" src="img/4.jpg" class="img-responsive fot">
         </div>
       </div>
+    </div>
   </section>
-
+  <!--Seccion Arrastre-->
+  <section class="borde">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 fotitos">
+          <!-- AcÁ se arrastra -->
+          <div class="text-center">
+            <h2>Escoge tus 4 fotos preferidad!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container fotos" ondrop="drop(event)" ondragover="finalDrop(event)">
+        <div class="row" id="contiene">
+          <div class="col-md-3 col-xs-6 fotitos" ondrop="drop(event)" ondragover="finalDrop(event)">
+            <!-- AcÁ se arrastra -->
+          </div>
+          <div class="col-md-3 col-xs-6 fotitos" ondrop="drop(event)" ondragover="finalDrop(event)">
+            <!-- AcÁ se arrastra -->
+          </div>
+          <div class="col-md-3 col-xs-6 fotitos" ondrop="drop(event)" ondragover="finalDrop(event)">
+            <!-- AcÁ se arrastra -->
+          </div>
+          <div class="col-md-3 col-xs-6 fotitos" ondrop="drop(event)" ondragover="finalDrop(event)">
+            <!-- AcÁ se arrastra -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fotos 2 -->
+  <section id="fotos">
+    <div class="container-fluid fotos">
+      <div class="row">
+        <div class="col-md-6 col-xs-6 fotitos">
+          <!-- Drag Drop -->
+          <img id="foto5" draggable="true" ondragstart="drag(event)" src="img/8.jpg" class="img-responsive fot2 f3">
+        </div>
+        <div class="col-md-6 col-xs-3">
+          <div class="row">
+            <img id="foto6" draggable="true" ondragstart="drag(event)" src="img/6.jpg" class="img-responsive fot2">
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-3">
+              <img id="foto7" draggable="true" ondragstart="drag(event)" src="img/7.jpg" class="img-responsive fot2A f1">
+            </div>
+            <div class="col-md-6 col-xs-3">
+              <img id="foto8" draggable="true" ondragstart="drag(event)" src="img/5.jpg" class="img-responsive fot2A f2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  Geolocalization -->
+  <!-- Botón Encuéntrame -->
+		<section>
+			<div class="row">
+				<div class="col-md-offset-4 col-md-4  col-sm-4">
+					<button id="encuentrame">Encuéntrame</button>
+					<form class="form-horizontal" role="form" id="BudgetForm">
+            <div class="form-group">
+            	<label>Origen</label><input id="origen" placeholder="Introduce una ubicación" class="form-control textMap"/>
+              <label>Destino</label><input id="destino" placeholder="Introduce una ubicación" class="form-control textMap"/>
+            </div>
+  				</form>
+					<button id="ruta">Ruta</button>
+				</div>
+			</div>
+			<!-- Mapa -->
+			<div class="row">
+				<div class="col-md-offset-2 col-md-12 col-sm-12" id="map">
+				<!-- Acá va a ir el mapa -->
+				</div>
+			</div>
+	</section>
+  <footer>
+		<div class="container footer">
+			<div class="row">
+				<div class="col-xs-12 text-center nombreFecha">
+					<p>© 20 Junio 2017 - Macarena Baltra - Drag and Drop</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <!-- Maps Clave : AIzaSyBvQuGpOBRU3qRNlkFtJl22MP_Lorkc608 -->
+	<!-- Autocomplete -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvQuGpOBRU3qRNlkFtJl22MP_Lorkc608&callback=initMap&libraries=places"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Bootstrap Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
