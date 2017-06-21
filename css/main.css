@@ -1,0 +1,13 @@
+body{
+  background-color: #BEB5B0;
+  color: #2D787D;
+}
+
+h1, h2{
+  text-align: center;
+  border: 0px solid #BEB5B0;
+}
+
+header {
+  margin-top: 20px;
+}
